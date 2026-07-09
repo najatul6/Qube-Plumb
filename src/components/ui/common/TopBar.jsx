@@ -5,8 +5,8 @@ import logo from "@/assets/logo.webp";
 
 export default function TopBar() {
   return (
-    <header className="bg-[#4b5161] text-white">
-      <div className="mx-auto flex h-[74px] max-w-7xl items-center justify-between px-4">
+    <header className="hidden lg:block top-0 z-50 bg-[#4b5161] text-white">
+      <div className="mx-auto flex h-18.5 max-w-7xl items-center justify-between px-4">
         {/* Logo */}
         <motion.a
           href="/"

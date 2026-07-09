@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, House, Menu, X } from "lucide-react";
-
+import logo from "@/assets/logo.webp";
 import { navigation } from "@/data/navigation";
 import MegaMenu from "./MegaMenu";
 import MobileNav from "./MobileNav";
@@ -10,9 +10,9 @@ import DesktopNav from "./DesktopNav";
 export default function Navbar() {
   const [activeMenu, setActiveMenu] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const closeTimeout = useRef();
-
   const navbarRef = useRef(null);
 
   const openMenu = (id) => {
@@ -26,6 +26,17 @@ export default function Navbar() {
     }, 150);
   };
 
+  // Track scrolling uniformly across all screen sizes
+  useEffect(() => {
+    const handleScroll = () => {
+      // Switches state exact moment the 74px TopBar passes out of the viewport bounds
+      setIsSticky(window.scrollY > 74);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   useEffect(() => {
     const handleClick = (e) => {
       if (!navbarRef.current?.contains(e.target)) {
@@ -34,7 +45,6 @@ export default function Navbar() {
     };
 
     document.addEventListener("mousedown", handleClick);
-
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
@@ -42,12 +52,17 @@ export default function Navbar() {
     <>
       <header
         ref={navbarRef}
-        className="sticky top-0 z-50 bg-[#3d434f] shadow-lg"
+        /* - On all devices: `fixed left-0 right-0 z-50` provides bulletproof stability.
+          - If scrolled past TopBar: It snaps instantly to the absolute top (`top-0`).
+          - At the very top: It sits exactly below the TopBar (`top-[74px]`).
+        */
+        className={`fixed left-0 right-0 z-50 bg-[#3d434f] shadow-lg transition-all duration-200 ${
+          isSticky ? "top-0" : "lg:top-[74px]"
+        }`}
       >
-        <div className="relative mx-auto max-w-7xl">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center">
-            {/* Desktop */}
-
+            {/* Desktop Navigation */}
             <DesktopNav
               navigation={navigation}
               activeMenu={activeMenu}
@@ -55,34 +70,32 @@ export default function Navbar() {
               closeMenu={closeMenu}
             />
 
-            {/* Mobile */}
-
-            <button
-              onClick={() => setMobileOpen(true)}
-              className="ml-auto mr-4 lg:hidden"
-            >
-              <Menu size={28} color="white" />
-            </button>
+            {/* Mobile / Tablet Navigation */}
+            <div className="flex items-center justify-between w-full lg:hidden">
+              <motion.a
+                href="/"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.96 }}
+                className="flex items-center"
+              >
+                <img src={logo} alt="2nd City" className="h-12 sm:h-14 w-auto" />
+              </motion.a>
+              <button
+                onClick={() => setMobileOpen(true)}
+                className="ml-auto p-1 text-white focus:outline-none"
+              >
+                <Menu size={28} />
+              </button>
+            </div>
           </div>
 
           <AnimatePresence>
             {activeMenu && (
               <motion.div
-                initial={{
-                  opacity: 0,
-                  y: -15,
-                }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                exit={{
-                  opacity: 0,
-                  y: -10,
-                }}
-                transition={{
-                  duration: 0.22,
-                }}
+                initial={{ opacity: 0, y: -15 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.22 }}
                 onMouseEnter={() => clearTimeout(closeTimeout.current)}
                 onMouseLeave={closeMenu}
               >
@@ -92,7 +105,6 @@ export default function Navbar() {
           </AnimatePresence>
         </div>
       </header>
-
       <AnimatePresence>
         {mobileOpen && (
           <MobileNav menu={navigation} onClose={() => setMobileOpen(false)} />
