@@ -13,7 +13,6 @@ export default function ContactSection() {
         <div
           className="
             overflow-hidden
-
             shadow-xl
             lg:grid
             lg:grid-cols-[2fr_1fr]
