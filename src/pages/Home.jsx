@@ -1,3 +1,4 @@
+import AboutSection from "@/components/about/AboutSection";
 import Hero from "@/components/hero/Hero";
 import TrustBar from "@/components/trust/Trustbar";
 
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <Hero/>
             <TrustBar/>
+            <AboutSection/>
         </div>
     );
 };
