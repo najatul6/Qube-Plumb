@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { services } from "@/data/Services";
 import ServiceItem from "./ServiceItem";
+import { Services } from "@/data/Services";
 
 export default function ServiceCard() {
   return (
@@ -39,11 +39,11 @@ export default function ServiceCard() {
         Our services
       </h2>
 
-      {services.map((service, index) => (
+      {Services.map((service, index) => (
         <ServiceItem
           key={service.title}
           {...service}
-          last={index === services.length - 1}
+          last={index === Services.length - 1}
         />
       ))}
     </motion.div>
