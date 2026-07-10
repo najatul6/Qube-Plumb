@@ -1,4 +1,4 @@
-export const services = [
+export const Services = [
   {
     title: "Plumbing",
     href: "/plumbing",
