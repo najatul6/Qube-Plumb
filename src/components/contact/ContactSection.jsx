@@ -15,7 +15,6 @@ export default function ContactSection() {
             overflow-hidden
 
             shadow-xl
-
             lg:grid
             lg:grid-cols-[2fr_1fr]
           "
