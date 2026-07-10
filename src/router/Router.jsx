@@ -1,5 +1,7 @@
+import ErrorLayout from "@/layout/ErrorLayout";
 import MainLayout from "@/layout/MainLayout";
 import Home from "@/pages/Home";
+import NotFound from "@/pages/NotFound";
 import { createBrowserRouter } from "react-router";
 const Router = createBrowserRouter([
   {
@@ -13,6 +15,16 @@ const Router = createBrowserRouter([
       }
     ]
   },
+  {
+    path:'*',
+    Component:ErrorLayout,
+    children:[
+      {
+        path:"*",
+        Component:NotFound,
+      }
+    ]
+  }
 ]);
 
 export default Router;
