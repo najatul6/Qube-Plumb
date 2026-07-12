@@ -23,11 +23,10 @@ export default function DesktopNavItem({
           items-center
           gap-2
           px-8
-          text-[17px]
+          text-sm
           font-semibold
           transition-all
           duration-300
-
           ${
             active
               ? "bg-white text-[#3f4551]"

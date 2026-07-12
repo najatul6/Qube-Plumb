@@ -64,16 +64,16 @@ export default function PromoCard({
 
       {/* Content */}
 
-      <div className="relative flex min-h-[250px] flex-col justify-between p-8">
+      <div className="relative flex min-h-60.5 flex-col justify-between p-8">
         <div>
           <h3
-            className={`text-[34px] font-bold leading-tight ${textColors[color]}`}
+            className={`text-2xl font-bold leading-tight ${textColors[color]}`}
           >
             {title}
           </h3>
 
           <p
-            className={`mt-5 text-[18px] leading-8 ${textColors[color]}`}
+            className={`mt-5 text-md leading-5 ${textColors[color]}`}
           >
             {description}
           </p>

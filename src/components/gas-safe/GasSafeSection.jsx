@@ -30,12 +30,12 @@ export default function GasSafeSection() {
           className="max-w-5xl"
         >
           <div className="flex gap-2">
-            <div className="mb-6 h-10 w-1 rounded-full bg-[#FFE433]" />
+            <div className="mb-6 h-8 w-1 rounded-full bg-[#FFE433]" />
 
             <h2
               className="
               font-['Teko']
-              text-5xl
+              text-4xl
               font-semibold
               uppercase
               leading-none

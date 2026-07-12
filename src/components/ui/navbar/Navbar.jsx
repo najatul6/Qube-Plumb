@@ -57,7 +57,7 @@ export default function Navbar() {
           - At the very top: It sits exactly below the TopBar (`top-[74px]`).
         */
         className={`fixed left-0 right-0 z-50 bg-[#3d434f] shadow-lg transition-all duration-200 ${
-          isSticky ? "top-0" : "lg:top-[74px]"
+          isSticky ? "top-0" : "lg:top-18.5"
         }`}
       >
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
