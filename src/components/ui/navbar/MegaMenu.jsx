@@ -63,7 +63,7 @@ export default function MegaMenu({ menu }) {
                         href={link.href}
                         className="group flex items-center text-[15px] font-medium text-slate-600 transition-colors hover:text-yellow-500"
                       >
-                        <span className="mr-3 h-[6px] w-[6px] rounded-full bg-slate-300 transition group-hover:bg-yellow-400" />
+                        <span className="mr-3 h-1.5 w-1.5 rounded-full bg-slate-300 transition group-hover:bg-yellow-400" />
 
                         {link.label}
                       </a>
