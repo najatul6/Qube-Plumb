@@ -38,7 +38,7 @@ export default function MegaMenu({ menu }) {
       exit="hidden"
       className="absolute left-0 top-full w-full"
     >
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-360 border ">
         <div className="overflow-hidden rounded-b-xl border border-slate-200 bg-white shadow-[0_25px_60px_rgba(15,23,42,.12)]">
           <div
             className="grid gap-12 px-12 py-10"

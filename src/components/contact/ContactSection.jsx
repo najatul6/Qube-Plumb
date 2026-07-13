@@ -7,7 +7,7 @@ import HiringBanner from "./HiringBanner";
 export default function ContactSection() {
   return (
     <section className="bg-white py-20">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-360 px-6">
         {/* Top */}
 
         <div

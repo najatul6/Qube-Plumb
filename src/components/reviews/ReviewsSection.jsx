@@ -4,7 +4,7 @@ import ReviewsSlider from "./ReviewsSlider";
 export default function ReviewsSection() {
   return (
     <section className="bg-[#f5f5f5] py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-360 px-6">
         <motion.div
           initial={{
             opacity: 0,

@@ -6,7 +6,7 @@ import BoilerContent from "./BoilerContent";
 export default function BoilerSection() {
   return (
     <section className="bg-[#f5f5f5] py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-360 px-6">
         <div
           className="
             overflow-hidden

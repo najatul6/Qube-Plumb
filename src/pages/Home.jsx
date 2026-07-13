@@ -22,15 +22,15 @@ const Home = () => {
       <ReviewsSection />
       <GasSafeSection />
       <div className="bg-[#F7F7F7]">
-        <div className="max-w-7xl mx-auto px-6 bg-[#F7F7F7]">
+        <div className="max-w-360 mx-auto px-6 bg-[#F7F7F7]">
           {/* contact banner */}
           <ContactBanner />
         </div>
       </div>
-      <BoilerSection/>
-      <BoilerServicesSection/>
-      <FireplaceSection/>
-      <TeamSection/>
+      <BoilerSection />
+      <BoilerServicesSection />
+      <FireplaceSection />
+      <TeamSection />
     </div>
   );
 };

@@ -9,7 +9,7 @@ export default function AboutSection() {
         className="
           mx-auto
           grid
-          max-w-7xl
+          max-w-360
           gap-20
 
           px-6

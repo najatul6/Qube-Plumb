@@ -7,7 +7,7 @@ import BrandStrip from "./BrandStrip";
 export default function TeamSection() {
   return (
     <section className="bg-[#f5f5f5] py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-360 px-6">
         {/* Top */}
 
         <div
@@ -21,10 +21,7 @@ export default function TeamSection() {
         >
           {/* Video */}
 
-          <TeamVideo
-            youtube={teamContent.youtube}
-            title={teamContent.title}
-          />
+          <TeamVideo youtube={teamContent.youtube} title={teamContent.title} />
 
           {/* Content */}
 

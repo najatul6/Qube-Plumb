@@ -8,7 +8,7 @@ import PromoGrid from "./PromoGrid";
 export default function GasSafeSection() {
   return (
     <section className="bg-[#f7f7f7] py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-360 px-6">
         {/* Heading */}
 
         <motion.div

@@ -78,7 +78,11 @@ export default function Navbar() {
                 whileTap={{ scale: 0.96 }}
                 className="flex items-center"
               >
-                <img src={logo} alt="2nd City" className="h-12 sm:h-14 w-auto" />
+                <img
+                  src={logo}
+                  alt="2nd City"
+                  className="h-12 sm:h-14 w-auto"
+                />
               </motion.a>
               <button
                 onClick={() => setMobileOpen(true)}

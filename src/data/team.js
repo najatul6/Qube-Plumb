@@ -69,14 +69,14 @@ export const brands = [
   {
     name: "Ferroli",
     image:
-      "https://dummyimage.com/180x70/e5e5e5/777777&text=Ferroli",
+      "https://2ndcitygasplumbingandheating.co.uk/assets/images/logos/ferroli-logo-mono.svg",
     href: "/",
   },
 
   {
     name: "Baxi",
     image:
-      "https://dummyimage.com/180x70/e5e5e5/777777&text=Baxi",
+      "https://2ndcitygasplumbingandheating.co.uk/assets/images/logos/baxi-logo-mono.svg",
     href: "/",
   },
 ];

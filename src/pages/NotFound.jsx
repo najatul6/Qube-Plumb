@@ -6,12 +6,10 @@ import PrimaryButton from "@/components/ui/PrimaryButton";
 export default function NotFound() {
   return (
     <main className="min-h-screen bg-white">
-
       {/* Hero */}
 
       <section className="bg-[#454c5c]">
-        <div className="mx-auto flex min-h-[420px] max-w-7xl items-center px-6">
-
+        <div className="mx-auto flex min-h-[420px] max-w-360 items-center px-6">
           <motion.div
             initial={{
               opacity: 0,
@@ -22,7 +20,7 @@ export default function NotFound() {
               x: 0,
             }}
             transition={{
-              duration: .6,
+              duration: 0.6,
             }}
           >
             <h1
@@ -42,16 +40,13 @@ export default function NotFound() {
               cannot be found
             </h1>
           </motion.div>
-
         </div>
       </section>
 
       {/* Content */}
 
       <section className="py-20">
-
-        <div className="mx-auto max-w-7xl px-6">
-
+        <div className="mx-auto max-w-360 px-6">
           <motion.div
             initial={{
               opacity: 0,
@@ -65,14 +60,13 @@ export default function NotFound() {
               once: true,
             }}
             transition={{
-              delay: .2,
+              delay: 0.2,
             }}
             className="max-w-4xl"
           >
             <p className="text-lg leading-9 text-slate-700">
-              The page you have requested does not exist.
-              If you believe this to be an error, or you
-              wish to contact us, please email us at
+              The page you have requested does not exist. If you believe this to
+              be an error, or you wish to contact us, please email us at
             </p>
 
             <a
@@ -92,22 +86,15 @@ export default function NotFound() {
               "
             >
               <Mail size={18} />
-
               office@2ndcitygasplumbingandheating.co.uk
             </a>
 
             <div className="mt-10">
-              <PrimaryButton to="/">
-                Back to the Homepage
-              </PrimaryButton>
+              <PrimaryButton to="/">Back to the Homepage</PrimaryButton>
             </div>
-
           </motion.div>
-
         </div>
-
       </section>
-
     </main>
   );
 }

@@ -8,7 +8,7 @@ import CTASection from "./CTASection";
 export default function AreasSection() {
   return (
     <section className="bg-white py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-360 px-6">
         {/* Heading */}
 
         <motion.div

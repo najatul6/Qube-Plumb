@@ -8,7 +8,7 @@ import ExtraPromoGrid from "./ExtraPromoGrid";
 export default function BoilerServicesSection() {
   return (
     <section className="bg-[#f7f7f7] py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-360 px-6">
         {/* Heading */}
 
         <motion.div
@@ -59,32 +59,24 @@ export default function BoilerServicesSection() {
               max-w-3xl
             "
           >
-            Most homes in the UK rely on their boiler daily to provide hot
-            water and central heating. Employers need heating systems to
-            ensure employees remain productive, comfortable, and focused.
-            When your boiler fails, don't delay replacing it, as repairs
-            will only become more expensive.
-
-            Contact our team to learn more about{" "}
-
+            Most homes in the UK rely on their boiler daily to provide hot water
+            and central heating. Employers need heating systems to ensure
+            employees remain productive, comfortable, and focused. When your
+            boiler fails, don't delay replacing it, as repairs will only become
+            more expensive. Contact our team to learn more about{" "}
             <strong>boiler installation</strong>,{" "}
-
-            <strong>boiler breakdowns</strong>, and repairs that are
-            available to you.
-
-            We guarantee an efficient service with minimal disruption to
-            your home or business.
-
-            If you need a new boiler in the West Midlands, trust 2nd City
-            Gas, Plumbing & Heating to provide an efficient and
-            cost-effective service.
+            <strong>boiler breakdowns</strong>, and repairs that are available
+            to you. We guarantee an efficient service with minimal disruption to
+            your home or business. If you need a new boiler in the West
+            Midlands, trust 2nd City Gas, Plumbing & Heating to provide an
+            efficient and cost-effective service.
           </p>
         </motion.div>
 
         {/* Cards */}
 
         <BoilerServicesGrid />
-        <ExtraPromoGrid/>
+        <ExtraPromoGrid />
       </div>
     </section>
   );
