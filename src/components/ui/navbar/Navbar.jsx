@@ -56,7 +56,7 @@ export default function Navbar() {
           isSticky ? "top-0" : "lg:top-18.5"
         }`}
       >
-        <div className={`relative mx-auto max-w-360 flex justify-center px-4 sm:px-6 lg:px-8`}>
+        <div className={`relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8`}>
           <div className="flex h-16 items-center">
             {/* Desktop Navigation */}
             <DesktopNav
