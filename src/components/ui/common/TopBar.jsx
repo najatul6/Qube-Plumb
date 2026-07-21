@@ -22,27 +22,27 @@ export default function TopBar() {
           {/* Phone 1 */}
           <motion.a
             whileHover={{ y: -2 }}
-            href="tel:08005873136"
+            href="tel:8801581205392"
             className="flex items-center gap-3 px-8 transition-colors hover:text-yellow-400"
           >
             <Phone
               size={20}
               className="text-yellow-400 animate__animated animate__heartBeat animate__infinite"
             />
-            <span className="text-[18px] font-medium">0800 587 3136</span>
+            <span className="text-[18px] font-medium">880 158 120 5392</span>
           </motion.a>
 
           {/* Phone 2 */}
           <motion.a
             whileHover={{ y: -2 }}
-            href="tel:07773429943"
+            href="tel:8801581205392"
             className="flex items-center gap-3 px-8 transition-colors hover:text-yellow-400"
           >
             <Phone
               size={20}
               className="text-yellow-400 animate__animated animate__heartBeat animate__infinite"
             />
-            <span className="text-[18px] font-medium">07773429943</span>
+            <span className="text-[18px] font-medium">880 158 120 5392</span>
           </motion.a>
 
           {/* Contact */}
@@ -58,7 +58,7 @@ export default function TopBar() {
         </div>
 
         {/* Mobile */}
-        <a href="tel:08005873136" className="flex items-center gap-2 lg:hidden">
+        <a href="tel:8801581205392" className="flex items-center gap-2 lg:hidden">
           <Phone className="text-yellow-400" />
         </a>
       </div>

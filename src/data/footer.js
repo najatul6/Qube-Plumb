@@ -81,47 +81,47 @@ export const footerLinks = [
 export const footerLocations = [
   {
     city: "Birmingham",
-    phone: "0121 426 6014",
+    phone: "+880 158 120 5392",
   },
 
   {
     city: "Malvern",
-    phone: "01684 230 035",
+    phone: "+880 158 120 5392",
   },
 
   {
     city: "Worcester",
-    phone: "01905 630 038",
+    phone: "+880 158 120 5392",
   },
 
   {
     city: "Halesowen",
-    phone: "0121 369 0114",
+    phone: "+880 158 120 5392",
   },
 
   {
     city: "Dudley",
-    phone: "01384 660 186",
+    phone: "+880 158 120 5392",
   },
 
   {
     city: "Stourbridge",
-    phone: "01384 660186",
+    phone: "+880 158 120 5392",
   },
 
   {
     city: "Kidderminster",
-    phone: "01562 950 013",
+    phone: "+880 158 120 5392",
   },
 
   {
     city: "Bromsgrove",
-    phone: "01527 280 062",
+    phone: "+880 158 120 5392",
   },
 
   {
     city: "Redditch",
-    phone: "01527 280 095",
+    phone: "+880 158 120 5392",
   },
 ];
 

@@ -19,7 +19,7 @@ export default function ContactBanner() {
 
         <div className="flex flex-col items-center gap-5 lg:flex-row">
           <h4 className="text-2xl font-bold text-white">
-            Call us on 0800 587 3136
+            Call us on 880 158 120 5392
           </h4>
 
           <button className="cursor-pointer flex items-center gap-3 bg-[#ffe433] px-7 py-4 font-semibold text-[#2d3d5b] transition hover:bg-yellow-300">
